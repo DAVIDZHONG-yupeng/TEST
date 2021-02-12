@@ -4,17 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.itheima.heima_ssm</groupId>
-    <artifactId>heima_ssm</artifactId>
+    <groupId>org.example</groupId>
+    <artifactId>ssm</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <properties>
         <spring.version>5.0.2.RELEASE</spring.version>
         <slf4j.version>1.6.6</slf4j.version>
         <log4j.version>1.2.12</log4j.version>
-        <oracle.version>11.2.0.1.0</oracle.version>
         <mybatis.version>3.4.5</mybatis.version>
         <spring.security.version>5.0.1.RELEASE</spring.security.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>        <!-- spring -->
@@ -159,8 +160,8 @@
 
         <dependency>
             <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.23</version>
+            <artifactId>mysql-connector-java</artifactId> <!--mysql操作连接--> <!--核心：mybatis&mysql-connector-->
+            <version>5.1.30</version>
         </dependency>
 
         <dependency>
@@ -175,7 +176,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.2</version>
+                    <version>3.8.1</version>
                     <configuration>
                         <source>1.8</source>
                         <target>1.8</target>
@@ -187,12 +188,11 @@
         </pluginManagement>
     </build>
     <modules>
-        <module>heima_ssm_dao</module>
-        <module>heima_ssm_service</module>
-        <module>heima_ssm_domain</module>
-        <module>heima_ssm_utils</module>
-        <module>heima_ssm_web</module>
+        <module>dao</module>
+        <module>service</module>
+        <module>domain</module>
+        <module>utils</module>
+        <module>web</module>
     </modules>
-
 
 </project>
