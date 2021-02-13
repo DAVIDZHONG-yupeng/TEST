@@ -8,6 +8,10 @@ import java.util.List;
 
 public interface IProductDao {
 
+    //根据id查询
+    @Select("select * from product where id=#{id}")
+    public Product findById(String id) throws Exception;
+
     //查询所有信息
     @Select("select * from product")
     public List<Product> findAll() throws Exception;

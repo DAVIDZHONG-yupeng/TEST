@@ -1,1 +1,4 @@
+org\example\ssm\dao\IOrdersDao.class
+org\example\ssm\dao\ITravellerDao.class
+org\example\ssm\dao\IMemberDao.class
 org\example\ssm\dao\IProductDao.class

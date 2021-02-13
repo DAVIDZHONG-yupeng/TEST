@@ -1,1 +1,4 @@
+org\example\ssm\domain\Traveller.class
 org\example\ssm\domain\Product.class
+org\example\ssm\domain\Orders.class
+org\example\ssm\domain\Member.class
